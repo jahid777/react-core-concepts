@@ -102,6 +102,7 @@ function MovieCounter(props){
       <MovieDisplay movie ={number+10}></MovieDisplay>
       <MovieDisplay movie ={number}></MovieDisplay>
       <MovieDisplay movie ={number}></MovieDisplay>
+      <MovieDisplay movie ={number}></MovieDisplay>
     </div>
   )
 }
