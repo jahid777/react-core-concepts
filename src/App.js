@@ -4,6 +4,9 @@ import './App.css';
 
 function App() {
   const actors = ['alom', 'mokachinu', 'kuduus'];
+  const studentName = [{name: 'jony', age:52} , {name: 'mony', age:42}, {name: 'tony', age:10}
+  ];
+  
   return (
     <div>
     
@@ -16,7 +19,11 @@ function App() {
     <Nayok name = {'samsu'}></Nayok>
 
     <MovieCounter></MovieCounter>
-   
+    
+    //this is for the multiple component using map .same design using in different component
+    {
+      studentName.map(student => <Nayok name ={student.name} age={student.age}></Nayok>)
+    }
     </div>
   );
 }
@@ -112,6 +119,7 @@ function MovieDisplay(props){
     <h2>number of movie which made by me:{props.movie}</h2>
   )
 }
+
 
 
 
